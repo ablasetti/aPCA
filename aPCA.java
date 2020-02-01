@@ -47,7 +47,7 @@ public class aPCA {
 		for(int key: keys) {
 			if(i<N) {
 				RealVector rv = eigenVV.getEigenvector(key); 
-				pcaMatrix.setColumnVector(key, rv);
+				pcaMatrix.setColumnVector(i, rv);
 			}
 			i++;
 		}
